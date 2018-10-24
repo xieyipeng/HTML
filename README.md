@@ -1,6 +1,10 @@
-# HTML
+# HTML(超文本标记语言)
 
 [教程链接](http://www.runoob.com/html/html-tutorial.html)
+
+查看完整的HTML属性列表: [HTML 标签参考手册](http://www.runoob.com/tags/html-reference.html)。
+
+[速查列表](http://www.runoob.com/html/html-quicklist.html)
 
 #### 解析
 
@@ -116,7 +120,7 @@
 [<title> - 定义了HTML文档的标题](http://www.runoob.com/try/try.php?filename=tryhtml_title)
 使用 <title> 标签定义HTML文档的标题
 
-[ <base>- 定义了所有链接的URL](http://www.runoob.com/try/try.php?filename=tryhtml_base)
+[<base>- 定义了所有链接的URL](http://www.runoob.com/try/try.php?filename=tryhtml_base)
 使用 <base> 定义页面中所有链接默认的链接目标地址。
 
 [<meta> - 提供了HTML文档的meta标记](http://www.runoob.com/try/try.php?filename=tryhtml_meta)
@@ -126,19 +130,46 @@
 
 可以添加在头部区域的元素标签为: <title>, <style>, <meta>, <link>, <script>, <noscript>, and <base>.
 
+## 内部样式表
 
+当单个文件需要特别样式时，就可以使用内部样式表。你可以在<head> 部分通过 <style>标签定义内部样式表:
 
+<head>
+<style type="text/css">
+body {background-color:yellow;}
+p {color:blue;}
+</style>
+</head>
 
+ 
 
+------
 
+## 外部样式表
 
-http://www.runoob.com/html/html-head.html
+当样式需要被应用到很多页面的时候，外部样式表将是理想的选择。使用外部样式表，你就可以通过更改一个文件来改变整个站点的外观。
 
-HTML<title>元素
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
 
+## HTML <div> 元素
 
+HTML <div> 元素是块级元素，它可用于组合其他 HTML 元素的容器。
 
+<div> 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。
 
+如果与 CSS 一同使用，<div> 元素可用于对大的内容块设置样式属性。
+
+<div> 元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 <table> 元素进行文档布局不是表格的正确用法。<table> 元素的作用是显示表格化的数据。
+
+## HTML <span> 元素
+
+HTML <span> 元素是内联元素，可用作文本的容器
+
+<span> 元素也没有特定的含义。
+
+当与 CSS 一同使用时，<span> 元素可用于为部分文本设置样式属性。
 
 
 

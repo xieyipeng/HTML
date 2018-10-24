@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>table</title>
+</head>
+
+<body>
+    <p>
+        每个表格从一个 table 标签开始。
+        每个表格行从 tr 标签开始。
+        每个表格的数据从 td 标签开始。
+    </p>
+
+    <!-- 每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格
+        （由 <td> 标签定义）。字母 td 指表格数据（table data），即数据
+        单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水
+        平线、表格等等。 -->
+
+    <h4>一列</h4>
+    <!-- border="1" : 边框 -->
+    <table border="1">
+        <tr>
+            <td>100</td>
+        </tr>
+    </table>
+
+
+    <h4>一行三列</h4>
+    <table border="1">
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </table>
+
+
+    <h4>两行三列</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+
+    <p>代表头,带边距，单元格间距 == 0：</p>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <!-- 带有标题 -->
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+        </tr>
+    </table>
+
+    <h4>单元格跨两格:</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+    <h4>单元格跨两列:</h4>
+    <table border="1">
+        <tr>
+            <th>First Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

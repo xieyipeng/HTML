@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- HTML 表单 用于收集不同类型的用户输入。 -->
+    <title>input</title>
+</head>
+
+<body>
+    <!-- 输入 -->
+    <form action="">
+        Firt name:<input type="text" name="firstname"><br>
+        <!-- 密码字段中的字符是隐藏的(显示为星号或圆圈) -->
+        Last name:<input type="password" name="lastname ">
+    </form>
+    <p>
+        <b>注意：</b>表单本身是不可见的，并且注意一个文字段的默认宽度是20个字符
+    </p>
+
+    <!-- 单选按钮 -->
+    <form>
+        <input type="radio" name="sex" value="male" >Male<br>
+        <input type="radio" name="sex" value="femele">Female
+    </form>
+
+    <!-- 复选框 -->
+    <form>
+        <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+        <input type="checkbox" name="vehicle" value="Car">I have a car
+    </form>
+
+    <!-- 提交按钮 -->
+    <form name="input" action="html_form_action.php" method="GET">
+        Username:<input type="text" name="user">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- 下拉列表 -->
+    <form action="">
+        <select name="cars">
+            <option value="volvo">volvo</option>
+            <option value="saab">saab</option>
+            <option value="fiat">fiat</option>
+            <option value="audi">audi</option>
+        </select>
+    </form>
+
+    <!-- 文本按钮 -->
+    <textarea rows="10" cols="30">
+        我是一个文本域
+    </textarea>
+
+    <!-- 带边框的表单 -->
+    <form action="">
+        <fieldset>
+            <legend>Persional information</legend>
+            Name:<input type="text" size="30"><br>
+            E-mail:<input type="text" size="30"><br>
+            Date of brith:<input type="text" size="10">
+        </fieldset>
+    </form>
+</body>
+
+</html>
